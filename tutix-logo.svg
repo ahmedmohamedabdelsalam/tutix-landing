@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <!-- TT monogram in gold — no background square -->
+  <g transform="translate(60,60) scale(0.546875)">
+    <!-- Top bar -->
+    <rect x="88"  y="118" width="336" height="32" rx="6" fill="#c9a84c"/>
+    <!-- Left T -->
+    <rect x="88"  y="186" width="152" height="32"  rx="6" fill="#c9a84c"/>
+    <rect x="208" y="186" width="32"  height="208" rx="6" fill="#c9a84c"/>
+    <!-- Right T -->
+    <rect x="272" y="186" width="152" height="32"  rx="6" fill="#c9a84c"/>
+    <rect x="272" y="186" width="32"  height="208" rx="6" fill="#c9a84c"/>
+  </g>
+  <!-- Wordmark -->
+  <text
+    x="378" y="252"
+    font-family="'Segoe UI', Inter, system-ui, -apple-system, sans-serif"
+    font-size="148"
+    font-weight="700"
+    letter-spacing="10"
+    fill="white">TUTIX</text>
+</svg>
