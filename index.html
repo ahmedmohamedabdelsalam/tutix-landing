@@ -367,21 +367,30 @@ body::before{
 #numbers{
   background:var(--beige);
   display:flex;align-items:center;justify-content:center;
+  padding:80px 0;
 }
 .nums-wrap{width:100%;max-width:1200px;padding:0 64px}
-.nums-lbl{text-align:center;margin-bottom:80px}
+.nums-header{text-align:center;margin-bottom:64px}
+.nums-h2{
+  font-family:var(--serif);font-size:clamp(32px,4.5vw,60px);font-weight:700;
+  color:var(--charcoal);letter-spacing:-.03em;line-height:1.1;
+  margin:14px 0 16px;
+}
+.nums-sub{font-size:clamp(13px,1.4vw,16px);color:var(--muted);font-family:var(--sans);font-weight:300}
+.nums-divider{width:48px;height:1px;background:rgba(201,168,76,.35);margin:0 auto 60px}
 .nums-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.num-item{padding:0 44px;text-align:center;border-left:1px solid rgba(201,168,76,.18)}
+.num-item{padding:40px 36px;text-align:center;border-left:1px solid rgba(201,168,76,.18)}
 .num-item:last-child{border-left:none}
 .num-val{
-  font-family:var(--serif);font-size:clamp(36px,5vw,72px);font-weight:800;
+  font-family:var(--serif);font-size:clamp(52px,6.5vw,96px);font-weight:800;
   color:var(--charcoal);letter-spacing:-.04em;line-height:1;
-  margin-bottom:14px;
+  margin-bottom:16px;
   display:flex;align-items:baseline;justify-content:center;gap:3px;
   direction:ltr;
 }
 .num-val .ga{color:var(--gold)}
-.num-lbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-family:var(--sans)}
+.num-lbl{font-size:14px;font-weight:600;color:var(--charcoal);font-family:var(--sans);margin-bottom:8px}
+.num-desc{font-size:12px;color:var(--muted);font-family:var(--sans);line-height:1.65;max-width:180px;margin:0 auto}
 
 /* ══ S7 · TESTIMONIALS ═══════════════════════════════ */
 #testimonials{
@@ -747,23 +756,32 @@ footer{
 <!-- ══ S6 · NUMBERS ════════════════════════════════════ -->
 <section id="numbers" class="snap">
   <div class="nums-wrap">
-    <div class="nums-lbl rv"><span class="label-gold" style="color:var(--gold)">BY THE NUMBERS</span></div>
+    <div class="nums-header">
+      <div class="rv"><span class="label-gold">BY THE NUMBERS</span></div>
+      <h2 class="nums-h2 rv d1">أرقام تتحدث عن نفسها</h2>
+      <p class="nums-sub rv d2">نتائج حقيقية من عملاء حقيقيين في السوق المصري والخليجي</p>
+    </div>
+    <div class="nums-divider rv d2"></div>
     <div class="nums-grid">
       <div class="num-item rv">
         <div class="num-val"><span class="count en" data-to="98">0</span><span class="ga">%</span></div>
-        <div class="num-lbl">CLIENT SATISFACTION</div>
+        <div class="num-lbl">رضا العملاء</div>
+        <div class="num-desc">متوسط تقييم العملاء بعد أول 3 أشهر من الاستخدام</div>
       </div>
       <div class="num-item rv d1">
-        <div class="num-val" dir="ltr" style="color:var(--charcoal)">24<span class="ga">/</span>7</div>
-        <div class="num-lbl">AUTOMATED RESPONSE</div>
+        <div class="num-val" dir="ltr">24<span class="ga">/</span>7</div>
+        <div class="num-lbl">رد فوري</div>
+        <div class="num-desc">الذكاء الاصطناعي يرد على عملاءك على مدار الساعة بدون انقطاع</div>
       </div>
       <div class="num-item rv d2">
         <div class="num-val"><span class="count en" data-to="3">0</span><span class="ga">×</span></div>
-        <div class="num-lbl">SALES INCREASE</div>
+        <div class="num-lbl">زيادة المبيعات</div>
+        <div class="num-desc">متوسط نمو المبيعات لدى عملاءنا خلال أول 60 يوم</div>
       </div>
       <div class="num-item rv d3">
         <div class="num-val"><span class="ga">&lt;</span><span class="count en" data-to="1">0</span><span style="font-size:.55em;color:var(--muted)">s</span></div>
-        <div class="num-lbl">RESPONSE TIME</div>
+        <div class="num-lbl">وقت الاستجابة</div>
+        <div class="num-desc">الـ AI يرد في أقل من ثانية واحدة على كل رسالة واردة</div>
       </div>
     </div>
   </div>
