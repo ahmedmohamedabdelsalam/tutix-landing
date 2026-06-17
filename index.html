@@ -326,7 +326,7 @@ body::before{
 .wa-lux-wrap{padding-top:40px}
 .wa-lux-phone{
   background:#161616;border:1px solid rgba(201,168,76,.15);
-  border-radius:20px;overflow:hidden;max-width:300px;margin:0 auto;
+  border-radius:20px;overflow:hidden;max-width:380px;margin:0 auto;
   box-shadow:0 32px 80px rgba(0,0,0,.4);
 }
 .wa-lux-bar{background:#0d0d0d;padding:8px 18px;display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.3);font-family:'Inter',sans-serif;direction:ltr}
@@ -342,7 +342,7 @@ body::before{
 }
 .wa-lux-n{font-size:12px;font-weight:600;color:var(--warm-white);font-family:var(--sans)}
 .wa-lux-s{font-size:10px;color:var(--gold);font-family:var(--sans)}
-.wa-lux-body{padding:14px;height:300px;overflow:hidden;display:flex;flex-direction:column;gap:7px}
+.wa-lux-body{padding:14px;height:380px;overflow:hidden;display:flex;flex-direction:column;gap:7px}
 .wa-lux-m{
   max-width:86%;padding:9px 13px;border-radius:10px;
   font-size:11.5px;line-height:1.55;font-family:var(--sans);
@@ -844,14 +844,14 @@ footer{
   <div class="ft-wrap">
     <div class="ft-top">
       <div class="ft-logo">
-        <div style="display:flex;align-items:center;gap:10px;opacity:.7">
+        <div style="display:flex;align-items:center;gap:10px">
           <svg width="36" height="36" viewBox="0 0 512 512" fill="none">
-            <rect width="512" height="512" rx="110" fill="#fefcf8"/>
-            <rect x="88"  y="118" width="336" height="32" rx="6" fill="#1a1a1a"/>
-            <rect x="88"  y="186" width="152" height="32"  rx="6" fill="#1a1a1a"/>
-            <rect x="208" y="186" width="32"  height="208" rx="6" fill="#1a1a1a"/>
-            <rect x="272" y="186" width="152" height="32"  rx="6" fill="#1a1a1a"/>
-            <rect x="272" y="186" width="32"  height="208" rx="6" fill="#1a1a1a"/>
+            <rect width="512" height="512" rx="110" fill="#1a1a1a"/>
+            <rect x="88"  y="118" width="336" height="32" rx="6" fill="#c9a84c"/>
+            <rect x="88"  y="186" width="152" height="32"  rx="6" fill="#c9a84c"/>
+            <rect x="208" y="186" width="32"  height="208" rx="6" fill="#c9a84c"/>
+            <rect x="272" y="186" width="152" height="32"  rx="6" fill="#c9a84c"/>
+            <rect x="272" y="186" width="32"  height="208" rx="6" fill="#c9a84c"/>
           </svg>
           <div>
             <div style="font-size:16px;font-weight:800;color:#fefcf8;letter-spacing:.22em;text-transform:uppercase;font-family:Inter,system-ui,sans-serif;line-height:1">TUTIX</div>
@@ -1015,12 +1015,12 @@ if (numsSec) cntObs.observe(numsSec)
 
 /* ── WhatsApp luxury animation ───────────────────── */
 const waMsgs = [
-  { r: 'u', t: 'السلام عليكم، عايز احجز عمرة رمضان القادم' },
-  { r: 'a', t: 'وعليكم السلام ورحمة الله 🌙\nأهلاً وسهلاً بيك!\nممكن اعرف اسم حضرتك؟' },
-  { r: 'u', t: 'أنا أحمد السيد' },
-  { r: 'a', t: 'أهلاً يا أستاذ أحمد 😊\nعندنا باكجات رمضان المتميزة:\n\n⭐ اقتصادي: ٦٥٠٠ ج\n⭐⭐⭐ VIP: ١٢٠٠٠ ج\n\nكلها شاملة طيران وفندق 🤲' },
-  { r: 'u', t: 'الباكج VIP بيشمل ايه؟' },
-  { r: 'a', t: '✅ فندق ٥ نجوم بمكة والمدينة\n✅ طيران مباشر\n✅ مواصلات VIP\n✅ مرشد طول الرحلة' },
+  { r: 'u', t: 'السلام عليكم عايز احجز عمرة رمضان القادم' },
+  { r: 'a', t: 'وعليكم السلام\nاهلا وسهلا\nممكن اعرف اسم حضرتك' },
+  { r: 'u', t: 'انا احمد السيد' },
+  { r: 'a', t: 'اهلا يا استاذ احمد\nعندنا باكجات رمضان\nاقتصادي ٦٥٠٠ جنيه\nVIP ١٢٠٠٠ جنيه\nكلهم شامل طيران وفندق' },
+  { r: 'u', t: 'الباكج VIP بيشمل ايه' },
+  { r: 'a', t: 'فندق ٥ نجوم في مكة والمدينة\nطيران مباشر\nمواصلات خاصة\nمرشد طول الرحلة' },
 ]
 const waBody = document.getElementById('waBody')
 let wi = 0
